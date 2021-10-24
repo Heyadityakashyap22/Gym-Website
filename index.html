@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tashan's fitness</title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Antique+Soft&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+    /* css Resate */
+    body {
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url('img/bg2.jpg');
+        font-family: 'Zen Antique Soft', serif;
+    }
+
+    .left {
+        position: absolute;
+        left: 34px;
+        top: 10px;
+        /* border: 2px solid rgb(255, 255, 255); */
+        display: inline-block;
+    }
+
+    .left img {
+        width: 84px;
+        filter: invert(100%);
+    }
+
+    .left div {
+        text-align: center;
+        color: white;
+        font-size: 18px;
+        /* line-height: 0px; */
+    }
+
+    .mid {
+        /* border: 2px solid rgb(255, 255, 255); */
+        display: block;
+        width: 35%;
+        margin: 24px auto;
+    }
+
+    .right {
+        position: absolute;
+        right: 34px;
+        top: 24px;
+        /* border: 2px solid rgb(255, 255, 255); */
+        display: inline-block;
+
+    }
+
+    /* .right:hover{
+        color: rgb(12, 96, 170);
+    } */
+    .btn {
+        margin: 8px 9px;
+        color: black;
+        padding: 4px 24px;
+        border-radius: 12px;
+        border: 2px solid black;
+        cursor: pointer;
+        font-size: 18px;
+        font-family: 'Zen Antique Soft', serif;
+    }
+
+    .btn:hover {
+        background-color: gray;
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        color: rgb(255, 255, 255);
+        font-size: 18px;
+
+    }
+
+    .navbar li a {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        padding: 34px 23px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: gray;
+
+
+    }
+
+    .container {
+        border: 2px solid white;
+        margin: 215px 74px;
+        padding: 100px;
+        width: 29%;
+        border-radius: 16px;
+    }
+
+    .container h1 {
+        text-align: center;
+    }
+
+    .form-group input {
+        text-align: center;
+        display: block;
+        width: 271px;
+        padding: 1px;
+        border: 2px solid white;
+        margin: 9px auto;
+        font-size: 24px;
+        border-radius: 9px;
+        font-family: 'Zen Antique Soft', serif;
+    }
+
+    .form-group textarea {
+        font-family: 'Zen Antique Soft', serif;
+        border-radius: 9px;
+        font-size: 15px;
+        display: block;
+        margin: auto;
+        position: fixed;
+        right: 24px;
+        bottom: 10px;
+
+    }
+.form-group button{
+    text-align: center;
+    display: block;
+    margin:10px auto;
+}
+</style>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <!-- left box for logo -->
+            <div class="left">
+                <img src="img/gym.png" alt="">
+                <div>
+                    Tashan's Fitness
+                </div>
+            </div>
+        </div>
+        <div class="mid">
+            <!-- mid box for navbar -->
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">More</a></li>
+                <li><a href="#">Fitness Products</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <!-- right box for bottons -->
+            <button class="btn">LogIn</button>
+            <!-- <button class="btn">Help</button> -->
+        </div>
+    </header>
+    <div class="container">
+        <h1>Register YourSelf On Best Gym</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your locality">
+            </div>
+            <div class="form-group">
+                <textarea name="mytext" cols="15" rows="4" placeholder="Chat With Us:-"></textarea>
+            </div>
+            <div class="form-group">
+                <button class="btn">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
